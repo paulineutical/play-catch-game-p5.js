@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color:mediumseagreen;
+    font-size: 20px;
+    font-family: 'Bungee';
+    color: rgb(229,228,249)
+}
+
+#score {
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Bungee Shade';
+    position: absolute;
+    top: 200px;
+}
+
+#life {
+    position: absolute;
+    top: 240px;
+}
+
+
+
+
+/* #pixelland {
+    font-family: 'Bungee Hairline';
+    font-size: smaller;
+    text-align: center
+} */
+ .title {
+    position: absolute;
+    top: 100px;
+ }
