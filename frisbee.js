@@ -34,7 +34,7 @@ class Frisbee {
 		let playerY = playerInfo.y + playerInfo.height / 2
 
          // dist(x1, y1, x2, y2) returns the distance between the objects
-		if (dist(frisbeeX, frisbeeY, playerX, playerY) > 40) {
+		if (dist(frisbeeX, frisbeeY, playerX, playerY) > 80) {
 			return false
 		} else {
 			return true
