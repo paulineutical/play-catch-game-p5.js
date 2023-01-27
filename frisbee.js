@@ -1,7 +1,7 @@
 class Frisbee {
     constructor () {
-        this.width = 100
-        this.height = 30
+        this.width = 70
+        this.height = 20
         this.x = window.innerWidth + 200
         this.y = 650
 		this.xSpeed = -12
@@ -34,7 +34,7 @@ class Frisbee {
 		let playerY = playerInfo.y + playerInfo.height / 2
 
          // dist(x1, y1, x2, y2) returns the distance between the objects
-		if (dist(frisbeeX, frisbeeY, playerX, playerY) > 70) {
+		if (dist(frisbeeX, frisbeeY, playerX, playerY) > 40) {
 			return false
 		} else {
 			return true

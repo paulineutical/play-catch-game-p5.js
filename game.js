@@ -68,11 +68,11 @@ class Game {
 
   draw() {
     image(this.backgroundImage, 0, 0, width, height);
-    image(this.cloud1Image, 150, 430, 100, 50);
-    image(this.cloud2Image, 1240, 550, 100, 70);
-    image(this.cloud1copyImage, 1100, 440, 200, 100);
-    image(this.cloud3Image, 1380, 430, 90, 50);
-    image(this.cloud3copyImage, 500, 550, 100, 50);
+    image(this.cloud1Image, 80, 350, 100, 50);
+    image(this.cloud2Image, 960, 420, 100, 70);
+    image(this.cloud1copyImage, 850, 350, 150, 80);
+    image(this.cloud3Image, 750, 330, 90, 50);
+    image(this.cloud3copyImage, 300, 400, 100, 50);
     this.player.draw();
 
     // spieler hat verloren
@@ -84,7 +84,7 @@ class Game {
         this.endGif = random(this.looseGifs);
       }
 
-      image(this.endGif, windowWidth / 2.9, windowHeight / 2.5, 500, 300);
+      image(this.endGif, 1050 / 2.9, 800 / 2.5, 500, 400);
       document.querySelector(".title").innerText = this.looseSentence;
       return;
     }
@@ -95,7 +95,7 @@ class Game {
         this.endGif = random(this.winGifs);
       }
 
-      image(this.endGif, windowWidth / 2.9, windowHeight / 2.5, 500, 300);
+      image(this.endGif, 1050 / 2.9, 800 / 2.2, 500, 400);
       document.querySelector(".title").innerText = this.winSentence;
       return;
     }

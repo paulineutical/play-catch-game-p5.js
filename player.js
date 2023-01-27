@@ -1,9 +1,9 @@
 class Player {
   constructor() {
-    this.width = 80;
-    this.height = 80;
+    this.width = 60;
+    this.height = 60;
     this.x = 30;
-    this.y = 900 - this.height;
+    this.y = 650 - this.height;
     this.gravity = 0.5;
     this.velocity = 0;
     this.score = 0;
@@ -29,7 +29,7 @@ class Player {
     this.velocity += this.gravity;
     this.targetY += this.velocity;
 
-    let boundary_box_bottom = 930 - this.height;
+    let boundary_box_bottom = 670 - this.height;
     let boundary_box_top = 700;
     let boundary_box_left = 50;
     let boundary_box_right = width - this.width - 50;
